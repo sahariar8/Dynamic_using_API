@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="max-w-screen-2xl mx-auto bg-base-100">
+    <header>
+        <nav>
+            <div class="nav grid grid-cols-3">
+                    <div class="flex ">
+                        <img src="images/Logo.png" alt="" class="w-20 my-2 md:w-auto md:my-5">
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="" class="tab w-24 px-5 my-2 text-xs md:w-auto md:my-7 md:text-2xl bg-red-400 text-black rounded font-semibold ">My Blog</a>
+                    </div>
+                    <div class="flex justify-end">
+                        <button class="btn my-2 btn-sm btn-error md:btn-md  md:my-5 text-white" onclick="window.location.href = 'blog.html'">Blog</button>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main class="mt-20">
+        <div class="flex flex-col">
+           
+                <div class="card lg:card-side bg-base-100 shadow-xl mb-10">
+                    <div class="card-body">
+                        <h2 class="card-title"><p class="text-lg font-bold text-lime-600">Question:<span class="text-purple-600"> Discuss the scope of var, let, and const?</span></p>
+                        </h2>
+                        <p><span class="text-lg font-bold">Ans:</span> <br> var, let, and const are three different ways to declare variables in JavaScript, and they have different scopes and behaviors: <br>
+
+                        <span class="text-lg font-bold"> var:</span> <br>
+                            1. Function-scoped: Variables declared with var are function-scoped, meaning they are only accessible within the function in which they are declared. <br>
+                            2. Hoisting: Variables declared with var are hoisted to the top of their containing function or global scope, which means they are moved to the top during the compilation phase. This can lead to unexpected behavior. <br>
+                            3. Can be redeclared: Variables declared with var can be redeclared within the same scope without any errors. <br>
+                            4. No block scope: var does not have block-level scope, which means it is accessible outside of blocks. <br>
+                            javascript. <br><br>
+
+
+                            <span class="text-lg font-bold">let:</span> <br>
+                            1. Block-scoped: Variables declared with let have block-level scope, meaning they are only accessible within the block in which they are defined. <br>
+                            2. Hoisting: Like var, variables declared with let are hoisted to the top of their containing block, but they are not initialized until they are encountered in the code. Accessing a let variable before its declaration will result in a ReferenceError. <br>
+                            3. Cannot be redeclared: Variables declared with let cannot be redeclared in the same scope. <br><br>
+
+
+                            <span class="text-lg font-bold">const:</span> <br>
+                            1. Block-scoped: Like let, variables declared with const are block-scoped. <br>
+                            2. Hoisting: Similar to let, const variables are hoisted to the top of their containing block but are not initialized until they are encountered in the code. Accessing a const variable before its declaration will result in a ReferenceError. <br>
+                            3. Cannot be reassigned: Variables declared with const cannot be reassigned after their initial assignment. They are constants and maintain their value throughout their lifetime. <br><br>
+                            </p>
+                    </div>
+                </div>
+                <div class="card lg:card-side bg-base-100 shadow-xl mb-10">
+                    <div class="card-body">
+                        <h2 class="card-title"><p class="text-lg font-bold text-lime-600">Question:<span class="text-purple-600">Tell us the use cases of null and undefined?</span></p>
+                        </h2>
+                        <p><span class="text-lg font-bold">Ans:</span> <br> null and undefined are two distinct JavaScript values that are often used to represent missing or empty data, but they have different use cases: <br>
+
+                        <span class="text-lg font-bold"> null:</span> <br>
+                            1. null is a value that represents the intentional absence of any object value or a variable that has been explicitly set to indicate no value or no reference. <br>
+                            2. It is typically used when you want to explicitly signal that a variable or property does not currently hold a value. <br>
+                            3. It is a valid value to assign to a variable to indicate that it is intentionally empty or uninitialized. <br>
+                            4. null is often used in situations where you want to clear out a variable or object property, indicating that it should not reference any object or have any value. <br><br>
+
+
+                            <span class="text-lg font-bold">undefined:</span> <br>
+                            1. undefined is a value that is automatically assigned to a variable or property if you try to access or query a variable or property that has not been initialized or does not exist. <br>
+                            2. It is used to indicate that a variable has been declared but has not been assigned any value. <br>
+                            3. It can also be the default return value of a function that does not explicitly return anything. <br>
+                            4. It's important to note that undefined is a value that JavaScript assigns, and it is distinct from null. <br><br>
+                    </div>
+                </div>
+                <div class="card lg:card-side bg-base-100 shadow-xl mb-10">
+                    <div class="card-body">
+                        <h2 class="card-title"><p class="text-lg font-bold text-lime-600">Question:<span class="text-purple-600"> What do you mean by REST API?</span></p>
+                        </h2>
+                        <p><span class="text-lg font-bold">Ans:</span> <br> REST API, which stands for Representational State Transfer Application Programming Interface, is a set of architectural principles and constraints used to design and interact with web services. It is not a technology itself but rather a style or approach for building web services that are scalable, stateless, and easy to maintain.
+
+                            Key characteristics and principles of RESTful APIs include: <br>
+
+                        <span class="text-lg font-bold"> var:</span> <br>
+                            1.Statelessness: In a REST API, each request from a client to the server must contain all the information needed to understand and process the request. The server should not rely on any previous requests or session state stored on the server. This makes RESTful services easy to scale and maintain.<br>
+                            2.Hoisting: Variables declared with var are hoisted to the top of their containing function or global scope, which means they are moved to the top during the compilation phase. This can lead to unexpected behaviorResources: Resources are the key abstractions in REST. Resources can represent any object or data entity, such as a user, product, or article. Each resource is identified by a unique URL. <br>
+                            3.HTTP Methods: REST APIs use standard HTTP methods (GET, POST, PUT, DELETE, etc.) to perform actions on resources. These methods correspond to CRUD (Create, Read, Update, Delete) operations, making the API predictable and intuitive.<br>
+                            4.HTTP Status Codes: REST APIs use HTTP status codes to indicate the outcome of a request. For example, a 200 status code typically indicates success, while a 404 status code indicates that the requested resource was not found. <br>
+                            5.Uniform Interface: REST APIs have a uniform and consistent interface, making it easier for developers to understand and work with different APIs. This uniformity includes using standard HTTP methods, well-defined resource URLs, and consistent naming conventions. <br>
+                            6.Representation: Resources can have multiple representations, such as JSON, XML, HTML, or others. Clients can specify the desired representation using the Accept header in their requests. <br><br>
+
+                           
+                            </p>
+                    </div>
+                </div>
+           
+                
+            </div>
+            
+        </div>
+        
+
+    </main>
+    <footer>
+
+    </footer>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
